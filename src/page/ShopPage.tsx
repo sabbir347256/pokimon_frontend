@@ -25,6 +25,7 @@ export default function ShopPage() {
         })
     });
 
+
     const rarities = ['Common', 'Rare', 'Holo Rare', 'Ultra Rare', 'Secret Rare'];
 
     return (

@@ -79,7 +79,7 @@ export default function DetailsPage() {
           <h2 className="text-[#000000] mt-4 font-medium text-sm">
             {product.set?.name}{cardNumber ? ` — ${cardNumber}` : ''}. View pricing, grade values, and market analysis.
           </h2>
-          {product.sourceUrl && (
+          {/* {product.sourceUrl && (
             <a
               href={product.sourceUrl}
               target="_blank"
@@ -88,7 +88,7 @@ export default function DetailsPage() {
             >
               <ExternalLink size={14} /> View on PriceCharting
             </a>
-          )}
+          )} */}
         </div>
 
         {/* Right: Details */}

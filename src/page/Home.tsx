@@ -21,16 +21,13 @@ const Home = () => {
             </div> */}
 
             <div>
-
                 <FeatureProducts></FeatureProducts>
             </div>
-
             <div>
                 <div className="flex  justify-between gap-4 mt-10 mb-1 sm:max-w-294 px-2 mx-auto">
                     <h1 className="text-2xl font-bold text-gray-800">ALL SETS</h1>
 
                     <div>
-
                         <Link to={'/AllSetscards'}>
                             <button className="flex items-center gap-1 text-gray-600 hover:text-gray-900 font-medium transition-colors">
                                 View All
