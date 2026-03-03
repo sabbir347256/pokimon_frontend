@@ -41,7 +41,7 @@ export const router = createBrowserRouter([
                 path: "/news/:slug",
                 Component: NewsPage
             }, {
-                path: "/cardSetExplorer",
+                path: "/cardSetExplorer/:id",
                 Component: CardSetExplorer
             }, {
                 path: "/signup",
