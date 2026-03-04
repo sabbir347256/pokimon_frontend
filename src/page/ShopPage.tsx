@@ -15,6 +15,8 @@ export default function ShopPage() {
         queryFn: getSets
     });
 
+    console.log(sets)
+
     const { data: productsData, isLoading } = useQuery({
         queryKey: ['products', selectedSet, selectedRarity, range],
         queryFn: () => getProducts({

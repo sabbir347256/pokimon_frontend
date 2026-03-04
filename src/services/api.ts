@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create an Axios instance
 const api = axios.create({
-  baseURL: "/api", // Proxy handles redirection to localhost:5000
+  baseURL: "/api", 
   headers: {
     "Content-Type": "application/json",
   },
@@ -31,6 +31,10 @@ export const getProductById = async (id: string) => {
 
 export const featureCard = async (id: string) => {
   const { data } = await api.get(`/products/eightCardForHome/product`);
+  return data;
+};
+export const newsCardData = async (id: string) => {
+  const { data } = await api.get(`/news`);
   return data;
 };
 export const getNewestProduct = async (id: string) => {
