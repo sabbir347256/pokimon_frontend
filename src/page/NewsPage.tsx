@@ -40,7 +40,7 @@ export default function NewsPage() {
 
           <div className="mt-8 grid grid-cols-2 gap-4">
             {newsData?.news?.slice(0,10).map((item: Record<string, string | number | undefined>) => (
-              <Link to={`/news/${item.slug}`} key={item._id as string}>
+              <Link to={`/news/${encodeURIComponent(item.title as string)}`} key={item._id as string}>
                 <div className="border border-[#e4e2e2] rounded-xl overflow-hidden hover:shadow-md transition-shadow h-[470px]">
                   <div className="rounded-t-lg overflow-hidden">
                     <img

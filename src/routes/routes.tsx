@@ -17,6 +17,7 @@ import NotFound from "../page/NotFound";
 import ResultPickachuPage from "../page/ResultPickachuPage";
 import ShopPage from "../page/ShopPage";
 import SignUp from "../page/SignUp";
+import NewsDetailsPage from "../page/newsDetailspage";
 
 
 
@@ -38,8 +39,8 @@ export const router = createBrowserRouter([
                 path: "/news-article",
                 Component: NewsPage
             }, {
-                path: "/news/:slug",
-                Component: NewsPage
+                path: "/news/:title",
+                Component: NewsDetailsPage
             }, {
                 path: "/cardSetExplorer/:id",
                 Component: CardSetExplorer
