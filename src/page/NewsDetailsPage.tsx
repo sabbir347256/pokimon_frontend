@@ -26,6 +26,9 @@ const newsDetailspage = () => {
     fetchNewsData();
   }, [title]);
 
+
+   
+
   console.log(newsData);
 
   if (!newsData) return <div>Loading...</div>;
