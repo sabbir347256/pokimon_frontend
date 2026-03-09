@@ -17,8 +17,7 @@ import NotFound from "../page/NotFound";
 import ResultPickachuPage from "../page/ResultPickachuPage";
 import ShopPage from "../page/ShopPage";
 import SignUp from "../page/SignUp";
-import NewsDetailsPage from "../page/newsDetailspage";
-import SeatPlan from "../page/SeatPlan";
+import DetailsPageNews from "../page/DetailsPageNews";
 
 
 
@@ -41,13 +40,10 @@ export const router = createBrowserRouter([
                 path: "/news-article",
                 Component: NewsPage
             }, 
-            // {
-            //     path: "/seatMap",
-            //     Component: SeatPlan
-            // }, 
+            
             {
                 path: "/news/:title",
-                Component: NewsDetailsPage
+                Component: DetailsPageNews
             }, {
                 path: "/cardSetExplorer/:id", 
                 Component: CardSetExplorer

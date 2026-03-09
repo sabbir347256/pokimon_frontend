@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 
-const newsDetailspage = () => {
+const DetailsPageNews = () => {
   const { title } = useParams();
 
   console.log(title);
@@ -25,9 +25,6 @@ const newsDetailspage = () => {
 
     fetchNewsData();
   }, [title]);
-
-
-   
 
   console.log(newsData);
 
@@ -67,4 +64,4 @@ const newsDetailspage = () => {
   );
 };
 
-export default newsDetailspage;
+export default DetailsPageNews;
