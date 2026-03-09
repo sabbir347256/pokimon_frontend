@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create an Axios instance
 const api = axios.create({
-  baseURL: "/api", 
+  baseURL: "https://pokimon-server.onrender.com/api", 
   headers: {
     "Content-Type": "application/json",
   },

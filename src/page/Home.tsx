@@ -11,8 +11,6 @@ import { Link } from "react-router";
 const Home = () => {
     return (
         <div>
-
-
             <Hero></Hero>
 
             {/* <div className=" my-5 md:my-14">
@@ -38,16 +36,9 @@ const Home = () => {
                 </div>
                 <StoreProducts></StoreProducts>
             </div>
-
-
-
-
-
             <div className="sm:my-13 my-10">
                 <Restocks></Restocks>
             </div>
-
-
             <div className=" my-5 sm:my-10">
 
                 <div className="text-center mb-10">

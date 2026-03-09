@@ -9,7 +9,7 @@ export default function NewsPage() {
   const [newsData, setnewsData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/news")
+    fetch("https://pokimon-server.onrender.com/api/news")
       .then((response) => response.json())
       .then((data) => setnewsData(data))
       .catch((error) => console.error("Error fetching data:", error));

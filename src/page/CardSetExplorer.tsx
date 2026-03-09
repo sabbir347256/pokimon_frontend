@@ -223,7 +223,7 @@ const CardSetExplorer = () => {
   const [productData, setProductData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products/allProductsData/product")
+    fetch("https://pokimon-server.onrender.com/api/products/allProductsData/product")
       .then((response) => response.json())
       .then((data) => setProductData(data))
       .catch((error) => console.error("Error fetching data:", error));

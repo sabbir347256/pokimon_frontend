@@ -49,7 +49,7 @@ export const router = createBrowserRouter([
                 path: "/news/:title",
                 Component: NewsDetailsPage
             }, {
-                path: "/cardSetExplorer/:id",
+                path: "/cardSetExplorer/:id", 
                 Component: CardSetExplorer
             }, {
                 path: "/signup",
