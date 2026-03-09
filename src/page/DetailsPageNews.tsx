@@ -11,7 +11,7 @@ const DetailsPageNews = () => {
   useEffect(() => {
     const fetchNewsData = async () => {
       try {
-        const response = await fetch(`/api/news/${encodeURIComponent(title)}`);
+        const response = await fetch(`https://pokimon-server.onrender.com/api/news/${encodeURIComponent(title)}`);
         if (response.ok) {
           const data = await response.json();
           setNewsData(data);
